@@ -1,0 +1,20 @@
+{
+    "source": {
+        "directories": [
+            "KairosProject/ApiDoctrineMongoDBODMLoader"
+        ],
+        "excludes": [
+            "Tests"
+        ]
+    },
+    "timeout": 10,
+    "logs": {
+        "text": "doc/infection/infection-log.txt",
+        "summary": "doc/infection/summary-log.txt",
+        "debug": "doc/infection/debug-log.txt"
+    },
+    "tmpDir": "/tmp",
+    "phpUnit": {
+        "configDir": "."
+    }
+}
