@@ -55,6 +55,8 @@ The document class has to be known to create a new query builder object. This in
 
 The system needs to take the item identifier from the request. Two parameters will be introduced to determine its place, and one more to define the identifier field. So the bag name, the parameter key and the identifier name have to be injected.
 
+A document manager has to be provided at the instantiation to access the connection.
+
 #### 4.2) getQueryBuildingEvent algorithm
 
 The getQueryBuildingEvent method is in charge of the query building event instantiation.
@@ -123,7 +125,7 @@ $eventDispatcher = new EventDispatcher();
 $loader = new Loader(
     Document::class,
     'id',
-    Loader::attribute,
+    Loader::REQUEST_ATTRIBUTE,
     'document_id'
     $logger
 );
@@ -169,7 +171,7 @@ $eventDispatcher->addListener(
 $loader = new Loader(
     Document::class,
     'id',
-    Loader::attribute,
+    Loader::REQUEST_ATTRIBUTE,
     'document_id'
     $logger
 );
