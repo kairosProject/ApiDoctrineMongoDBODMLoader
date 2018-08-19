@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "kairos-project/api-loader": "^1@dev",
-        "doctrine/mongodb-odm": "^2@dev"
+        "doctrine/mongodb-odm": ">=1.1",
+		"alcaeus/mongo-php-adapter" : "^1.1"
     },
 	"require-dev" : {
 		"infection/infection" : "^0.8.2",
