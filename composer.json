@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "kairos-project/api-loader": "^1@dev",
-        "doctrine/mongodb-odm": ">=1.1",
+        "doctrine/mongodb-odm": ">=1.1, <3",
 		"alcaeus/mongo-php-adapter" : "^1.1"
     },
 	"require-dev" : {

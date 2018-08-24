@@ -16,14 +16,14 @@ declare(strict_types=1);
  */
 namespace KairosProject\ApiDoctrineMongoDBODMLoader\Loader;
 
-use KairosProject\ApiLoader\Loader\AbstractApiLoader;
-use KairosProject\ApiController\Event\ProcessEventInterface;
-use KairosProject\ApiLoader\Event\QueryBuildingEventInterface;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use KairosProject\ApiLoader\Event\QueryBuildingEvent;
-use Psr\Log\LoggerInterface;
-use Doctrine\ODM\MongoDB\Query\Builder;
 use Doctrine\ODM\MongoDB\DocumentManager;
+use Doctrine\ODM\MongoDB\Query\Builder;
+use KairosProject\ApiController\Event\ProcessEventInterface;
+use KairosProject\ApiLoader\Event\QueryBuildingEvent;
+use KairosProject\ApiLoader\Event\QueryBuildingEventInterface;
+use KairosProject\ApiLoader\Loader\AbstractApiLoader;
+use Psr\Log\LoggerInterface;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**
  * Loader
@@ -282,22 +282,58 @@ class Loader extends AbstractApiLoader
     }
 
     /**
-     * Execute query.
+     * Execute item query.
      *
-     * This method execute the query and return the result.
+     * This method execute the query and return the result as a specific item.
      *
      * @param QueryBuildingEventInterface $event      The query building event
      * @param string                      $eventName  The current event name
      * @param EventDispatcherInterface    $dispatcher The current event dispatcher
      *
-     * @return                                        void
+     * @return                                        mixed
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
-    protected function executeQuery(
+    protected function executeItemQuery(
         QueryBuildingEventInterface $event,
         $eventName,
         EventDispatcherInterface $dispatcher
     ) {
+        return $this->getQuery($event)->getQuery()->getSingleResult();
+    }
+
+    /**
+     * Execute collection query.
+     *
+     * This method execute the query and return the result as a collection.
+     *
+     * @param QueryBuildingEventInterface $event      The query building event
+     * @param string                      $eventName  The current event name
+     * @param EventDispatcherInterface    $dispatcher The current event dispatcher
+     *
+     * @return                                        mixed
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     */
+    protected function executeCollectionQuery(
+        QueryBuildingEventInterface $event,
+        $eventName,
+        EventDispatcherInterface $dispatcher
+    ) {
+            return $this->getQuery($event)->getQuery()->execute();
+    }
+
+    /**
+     * Get query
+     *
+     * Return a query builder instance contained into the current query building event.
+     *
+     * @param QueryBuildingEventInterface $event The current query building event
+     *
+     * @throws \LogicException If the resulting query builder is not a valid builder
+     *
+     * @return Builder
+     */
+    private function getQuery(QueryBuildingEventInterface $event) : Builder
+    {
         $query = $event->getQuery();
         if (!$query instanceof Builder) {
             $this->logger->error(
@@ -312,7 +348,7 @@ class Loader extends AbstractApiLoader
             );
         }
 
-        return $query->getQuery()->execute();
+        return $query;
     }
 
     /**

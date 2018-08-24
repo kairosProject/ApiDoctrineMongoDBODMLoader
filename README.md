@@ -44,10 +44,10 @@ The doctrine MongoDB loader inherits the API loader. It uses the base loader log
 To inherit the abstract API loader, this component will have to define the abstract methods methods:
  * getQueryBuildingEvent
  * instanciateQueryBuilder
- * executeQuery
+ * executeCollectionQuery
+ * executeItemQuery
  * configureQueryForCollection
  * configureQueryForItem
-
 
 #### 4.1) Dependency injection specification
 
@@ -99,9 +99,9 @@ Define the query field equality clause, regarding the identifier field.
 
 The configureQueryForCollection method will configure the query builder instance to load a set of elements. This method will stay empty for the MongoDB state. In matter, the instanciateQueryBuilder method is adequate.
 
-#### 4.6) executeQuery algorithm
+#### 4.6) executeCollectionQuery algorithm
 
-The executeQuery method will return the query result.
+The executeCollectionQuery method will return the query result.
 
 ```txt
 We assume to receive the query building event from the parameters.
@@ -110,6 +110,9 @@ We assume the query builder as query building event part.
 Execute the query.
 Return the query execution result.
 ```
+#### 4.7) executeItemQuery algorithm
+
+The executeItemQuery method will implement the same logic than the executeCollectionQuery but will return a single query result.
 
 ## 5) Usage
 
@@ -125,7 +128,7 @@ $eventDispatcher = new EventDispatcher();
 $loader = new Loader(
     Document::class,
     'id',
-    Loader::REQUEST_ATTRIBUTE,
+    Loader::attribute,
     'document_id'
     $logger
 );
@@ -171,7 +174,7 @@ $eventDispatcher->addListener(
 $loader = new Loader(
     Document::class,
     'id',
-    Loader::REQUEST_ATTRIBUTE,
+    Loader::attribute,
     'document_id'
     $logger
 );

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "141e046b5d06074c15bf92539e9d4933",
+    "content-hash": "fea5589de8e20f9e27510fc7dde83b73",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "5e65fc393ecc17e395ac44d7b855dcf5e6864f34"
+                "reference": "c2e7d98dbe6e8257d3b46b7ebc60cfe234cf3573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/5e65fc393ecc17e395ac44d7b855dcf5e6864f34",
-                "reference": "5e65fc393ecc17e395ac44d7b855dcf5e6864f34",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/c2e7d98dbe6e8257d3b46b7ebc60cfe234cf3573",
+                "reference": "c2e7d98dbe6e8257d3b46b7ebc60cfe234cf3573",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
@@ -212,7 +212,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2018-08-10T11:31:42+00:00"
+            "time": "2018-08-21T18:03:24+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -861,12 +861,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kairosProject/ApiController.git",
-                "reference": "6e158430e3ba134048f0f50ff0cf52173ccc1bea"
+                "reference": "d3b578456e5fe57df1ad1ab8389f1bd90a17c7f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kairosProject/ApiController/zipball/6e158430e3ba134048f0f50ff0cf52173ccc1bea",
-                "reference": "6e158430e3ba134048f0f50ff0cf52173ccc1bea",
+                "url": "https://api.github.com/repos/kairosProject/ApiController/zipball/d3b578456e5fe57df1ad1ab8389f1bd90a17c7f4",
+                "reference": "d3b578456e5fe57df1ad1ab8389f1bd90a17c7f4",
                 "shasum": ""
             },
             "require": {
@@ -905,7 +905,7 @@
                 }
             ],
             "description": "The controller part of the kairos project's api",
-            "time": "2018-08-17T11:08:57+00:00"
+            "time": "2018-08-19T14:59:14+00:00"
         },
         {
             "name": "kairos-project/api-loader",
@@ -913,12 +913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kairosProject/ApiLoader.git",
-                "reference": "384187022690ddc141dc5956df3a219b27332243"
+                "reference": "a05ccdef2d215582fe567c4e14fdc4bed10944e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kairosProject/ApiLoader/zipball/384187022690ddc141dc5956df3a219b27332243",
-                "reference": "384187022690ddc141dc5956df3a219b27332243",
+                "url": "https://api.github.com/repos/kairosProject/ApiLoader/zipball/a05ccdef2d215582fe567c4e14fdc4bed10944e0",
+                "reference": "a05ccdef2d215582fe567c4e14fdc4bed10944e0",
                 "shasum": ""
             },
             "require": {
@@ -955,7 +955,7 @@
                 }
             ],
             "description": "A data loader listener to be attached to ApiController events",
-            "time": "2018-08-17T11:11:22+00:00"
+            "time": "2018-08-24T21:37:25+00:00"
         },
         {
             "name": "mongodb/mongodb",
@@ -1125,12 +1125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "1ed8ba31403db259af03c7559f000beadd287314"
+                "reference": "8ca04d87a73d209b918f352f72f8ebba3fcb61c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/1ed8ba31403db259af03c7559f000beadd287314",
-                "reference": "1ed8ba31403db259af03c7559f000beadd287314",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8ca04d87a73d209b918f352f72f8ebba3fcb61c4",
+                "reference": "8ca04d87a73d209b918f352f72f8ebba3fcb61c4",
                 "shasum": ""
             },
             "require": {
@@ -1186,7 +1186,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:25:51+00:00"
+            "time": "2018-08-21T12:03:16+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -2242,12 +2242,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "f4181f5c0a2af0180dadaeb576c6a1a7548b54bf"
+                "reference": "dfb0bf3622f59fe43c983940c7ba06b126f26289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f4181f5c0a2af0180dadaeb576c6a1a7548b54bf",
-                "reference": "f4181f5c0a2af0180dadaeb576c6a1a7548b54bf",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/dfb0bf3622f59fe43c983940c7ba06b126f26289",
+                "reference": "dfb0bf3622f59fe43c983940c7ba06b126f26289",
                 "shasum": ""
             },
             "require": {
@@ -2297,7 +2297,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-07-18T03:54:23+00:00"
+            "time": "2018-08-21T05:26:12+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2491,12 +2491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "59d3ce6fa0ca8f4fda8177ef4f8bcdbbd8b51d9a"
+                "reference": "287dd08b6b789dcc307ec71e60131c6b1affc9c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/59d3ce6fa0ca8f4fda8177ef4f8bcdbbd8b51d9a",
-                "reference": "59d3ce6fa0ca8f4fda8177ef4f8bcdbbd8b51d9a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/287dd08b6b789dcc307ec71e60131c6b1affc9c4",
+                "reference": "287dd08b6b789dcc307ec71e60131c6b1affc9c4",
                 "shasum": ""
             },
             "require": {
@@ -2567,7 +2567,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-14T09:48:57+00:00"
+            "time": "2018-08-24T14:02:22+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -3326,12 +3326,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d03b94117915d130117e49eac722959b0fe45959"
+                "reference": "89150c86d70a370059327b149b0363a979aa5c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d03b94117915d130117e49eac722959b0fe45959",
-                "reference": "d03b94117915d130117e49eac722959b0fe45959",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/89150c86d70a370059327b149b0363a979aa5c9e",
+                "reference": "89150c86d70a370059327b149b0363a979aa5c9e",
                 "shasum": ""
             },
             "require": {
@@ -3369,7 +3369,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-08-16T03:10:17+00:00"
+            "time": "2018-08-24T04:22:58+00:00"
         },
         {
             "name": "symfony/config",
@@ -3440,12 +3440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "2b8324eae73c2bddbbe6063d6b4280a9edb9f7e1"
+                "reference": "640b76ad8bf4bf587bafc1e0c5ba6edf89c2c7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/2b8324eae73c2bddbbe6063d6b4280a9edb9f7e1",
-                "reference": "2b8324eae73c2bddbbe6063d6b4280a9edb9f7e1",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/640b76ad8bf4bf587bafc1e0c5ba6edf89c2c7f3",
+                "reference": "640b76ad8bf4bf587bafc1e0c5ba6edf89c2c7f3",
                 "shasum": ""
             },
             "require": {
@@ -3504,7 +3504,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-09T19:20:55+00:00"
+            "time": "2018-08-23T09:47:19+00:00"
         },
         {
             "name": "symfony/filesystem",
