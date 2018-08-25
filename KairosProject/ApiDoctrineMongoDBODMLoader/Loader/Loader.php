@@ -152,8 +152,10 @@ class Loader extends AbstractApiLoader
      * @param string          $collectionEventName The collection event fired for extension
      * @param string          $itemEventName       The item ivent fired for extension
      * @param string          $eventKeyStorage     The key storage where is located the final result
+     * @param boolean         $noItemException     The exception throwing state in case of unloaded item.
      *
-     * @return void
+     * @return                                         void
+     * @SuppressWarnings(PHPMD.ExcessiveParameterList)
      */
     public function __construct(
         DocumentManager $manager,
@@ -164,9 +166,10 @@ class Loader extends AbstractApiLoader
         LoggerInterface $logger,
         string $collectionEventName = self::COLLECTION_EVENT_NAME,
         string $itemEventName = self::ITEM_EVENT_NAME,
-        string $eventKeyStorage = self::EVENT_KEY_STORAGE
+        string $eventKeyStorage = self::EVENT_KEY_STORAGE,
+        bool $noItemException = self::NO_ITEM_EXCEPTION
     ) {
-        parent::__construct($logger, $collectionEventName, $itemEventName, $eventKeyStorage);
+        parent::__construct($logger, $collectionEventName, $itemEventName, $eventKeyStorage, $noItemException);
 
         $this->manager = $manager;
         $this->documentName = $documentName;

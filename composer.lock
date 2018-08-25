@@ -913,12 +913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kairosProject/ApiLoader.git",
-                "reference": "2bbc3f57ed67a645bafa170f28f933c7cefce069"
+                "reference": "d07c75ccc139d8b55b782e5e7719f802a61f044a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kairosProject/ApiLoader/zipball/2bbc3f57ed67a645bafa170f28f933c7cefce069",
-                "reference": "2bbc3f57ed67a645bafa170f28f933c7cefce069",
+                "url": "https://api.github.com/repos/kairosProject/ApiLoader/zipball/d07c75ccc139d8b55b782e5e7719f802a61f044a",
+                "reference": "d07c75ccc139d8b55b782e5e7719f802a61f044a",
                 "shasum": ""
             },
             "require": {
@@ -955,7 +955,7 @@
                 }
             ],
             "description": "A data loader listener to be attached to ApiController events",
-            "time": "2018-08-24T23:10:00+00:00"
+            "time": "2018-08-25T10:19:36+00:00"
         },
         {
             "name": "mongodb/mongodb",

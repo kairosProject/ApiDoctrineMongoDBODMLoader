@@ -150,7 +150,8 @@ public function __construct(
         LoggerInterface $logger,
         string $collectionEventName = self::COLLECTION_EVENT_NAME,
         string $itemEventName = self::ITEM_EVENT_NAME,
-        string $eventKeyStorage = self::EVENT_KEY_STORAGE
+        string $eventKeyStorage = self::EVENT_KEY_STORAGE,
+        bool $noItemException = self::NO_ITEM_EXCEPTION
 );
 ```
 
